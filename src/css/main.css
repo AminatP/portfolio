@@ -1,12 +1,12 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
 /* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -24,7 +24,7 @@ Variables
   --clr-primary-7: hsl(184, 65%, 59%);
   --clr-primary-8: hsl(184, 80%, 74%);
   --clr-primary-9: hsl(185, 94%, 87%);
-  --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-primary-10: hsl(188, 60%, 30%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-3: hsl(209, 34%, 30%);
@@ -37,7 +37,8 @@ Variables
   --clr-green-dark: hsl(125, 67%, 35%);
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
-  --clr-white: #fff;
+  /* this is here changes color of the right side of my image*/
+  --clr-white:  hsl(188, 50%, 27%);
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -49,7 +50,7 @@ Variables
   --fixed-width: 700px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -203,7 +204,7 @@ p {
   color: var(--clr-primary-5);
 }
 /*
-=============== 
+===============
 Navbar
 ===============
 */
@@ -282,7 +283,7 @@ Navbar
   }
 }
 /*
-=============== 
+===============
 Sidebar
 ===============
 */
@@ -338,7 +339,7 @@ Sidebar
   }
 }
 /*
-=============== 
+===============
 Sidebar Animation
 ===============
 */
@@ -401,7 +402,7 @@ Sidebar Animation
 }
 
 /*
-=============== 
+===============
 Hero
 ===============
 */
@@ -429,6 +430,8 @@ Hero
 }
 .hero-img {
   display: none;
+  width: 400px;
+  height: 400px;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
@@ -482,22 +485,18 @@ Hero
 }
 
 /*
-=============== 
+===============
 Services
 ===============
 */
 .service {
   background: var(--clr-white);
-  padding: 3rem 1.5rem;
+  padding: 1rem 1rem 0.1rem 1rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-}
-.service-icon {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
 }
 .service .underline {
   width: 3rem;
@@ -505,15 +504,8 @@ Services
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service p {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
 .service:hover {
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
-}
-.service:hover p {
   color: var(--clr-primary-9);
 }
 .service:hover .underline {
@@ -535,7 +527,7 @@ Services
 }
 
 /*
-=============== 
+===============
 Jobs
 ===============
 */
@@ -625,7 +617,7 @@ Jobs
 }
 
 /*
-=============== 
+===============
 Projects
 ===============
 */
@@ -747,7 +739,7 @@ Projects
 }
 
 /*
-=============== 
+===============
 Blog
 ===============
 */
