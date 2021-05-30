@@ -1,6 +1,7 @@
 import React from "react"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
+
 const Navbar = () => {
   return <nav className="navbar">
     <div className="nav-center">
@@ -13,5 +14,4 @@ const Navbar = () => {
     </div>
   </nav>
 }
-
 export default Navbar

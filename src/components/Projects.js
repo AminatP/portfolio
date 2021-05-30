@@ -20,7 +20,7 @@ const query = graphql`
 
 const Projects = () => {
   const {file:{childImageSharp:{fluid}}} = useStaticQuery(query);
-  return <section className="section projects">
+  return <section className="section projects" id="projects">
     <Title title="Projects"/>
     <div className="section-center projects-center">
       {projects.map((project)=>{

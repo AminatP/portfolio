@@ -2,7 +2,7 @@ import React from "react"
 import Title from "./Title"
 import skills from "../constants/skills"
 const Skills = () => {
-  return <section className="section bg-grey">
+  return <section className="section bg-grey" id="skills">
     <Title title="Technical Skills"/>
     <div className="section-center services-center">
       {skills.map((skill)=>{

@@ -1,41 +1,36 @@
 import React from "react"
-import { Link } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 const data = [
   {
     id: 1,
-    text: "home",
-    url: "/",
+    text: "skills",
+    url: "#skills",
   },
   {
     id: 2,
-    text: "about",
-    url: "/about/",
+    text: "projects",
+    url: "#projects",
   },
   {
     id: 3,
-    text: "projects",
-    url: "/projects/",
+    text: "resume",
+    url: "resume",
   },
   {
     id: 4,
-    text: "resume",
-    url: "/resume/",
-  },
-  {
-    id: 5,
     text: "contact",
-    url: "/contact/",
+    url: "#contact",
   },
 ]
 
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
-      <Link to={link.url}>{link.text}</Link>
+      <ul onClick={() => scrollTo(`${link.url}`)}>{link.text}</ul>
     </li>
   )
 })
-// I KNOW WE CAN COMBINE IT !!!!!
 
 export default ({ styleClass }) => {
   return (
