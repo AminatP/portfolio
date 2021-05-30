@@ -38,7 +38,7 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   /* this is here changes color of the right side of my image*/
-  --clr-white:  hsl(150, 30%, 96%);
+  --clr-white: #fff;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -188,7 +188,7 @@ p {
 }
 /* page links */
 
-/* social links */
+/*------social links-------*/
 .social-links {
   margin-top: 2rem;
   width: 15rem;
@@ -196,7 +196,7 @@ p {
   justify-content: space-between;
 }
 .social-link {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
@@ -536,7 +536,7 @@ Footer
 ===============
 */
 .footer {
-  height: 9rem;
+  height: 7rem;
   background: #222;
   text-align: center;
   display: grid;
@@ -547,6 +547,7 @@ Footer
   color: var(--clr-white);
   font-weight: normal;
   text-transform: uppercase;
+  font-size: 0.75rem;
 }
 .footer h4 span {
   color: var(--clr-primary-5);

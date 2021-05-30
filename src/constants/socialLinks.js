@@ -1,43 +1,31 @@
 import React from "react"
 import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaDribbbleSquare,
-  FaBehanceSquare,
-  FaTwitterSquare,
-} from "react-icons/fa"
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillMail,
+} from 'react-icons/ai';
 
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.twitter.com",
+    icon: <AiFillLinkedin className="social-icon"></AiFillLinkedin>,
+    url: "https://www.linkedin.com/in/aminat-puebla/",
   },
   {
     id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    icon: <AiFillGithub className="social-icon"></AiFillGithub>,
+    url: "https://github.com/AminatP",
   },
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    icon: <AiFillMail className="social-icon"></AiFillMail>,
+    url: "mailto: amina1502@gmail.com",
   },
 ]
 const links = data.map(link => {
   return (
     <li key={link.id}>
-      <a href={link.url} className="social-link">
+      <a href={link.url} target="_blank" className="social-link">
         {link.icon}
       </a>
     </li>

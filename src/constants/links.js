@@ -1,5 +1,6 @@
 import React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import resume from './resume/Aminat_Puebla_Resume.pdf'
 
 const data = [
   {
@@ -23,12 +24,21 @@ const data = [
     url: "#contact",
   },
 ]
-
 const tempLinks = data.map(link => {
   return (
-    <li key={link.id}>
-      <ul onClick={() => scrollTo(`${link.url}`)}>{link.text}</ul>
+    link.id === 3 ? (
+      <li key={link.id}>
+      <ul>
+      <a href={resume} target="_blank" rel="noopener">Resume</a>
+      </ul>
     </li>
+    ) : (
+      <li key={link.id}>
+      <ul>
+      <a onClick={() => scrollTo(`${link.url}`)}>{link.text}</a>
+      </ul>
+    </li>
+    )
   )
 })
 
