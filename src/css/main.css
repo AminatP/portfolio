@@ -38,7 +38,7 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   /* this is here changes color of the right side of my image*/
-  --clr-white:  hsl(188, 50%, 27%);
+  --clr-white:  hsl(150, 30%, 96%);
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
