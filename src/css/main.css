@@ -191,7 +191,9 @@ p {
 }
 /* page links */
 
-/*------social links-------*/
+/*-------------------------------*/
+/*---------social links----------*/
+/*-------------------------------*/
 .social-links {
   margin-top: 2rem;
   width: 15rem;
@@ -341,35 +343,36 @@ p {
   }
 }
 
-/*
-===============
-Services
-===============
-*/
-.service {
+/*-------------------------------*/
+/*--------Tech Skills------------*/
+/*-------------------------------*/
+
+.skill {
   background: var(--clr-white);
   padding: 1rem 1rem 0.1rem 1rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
+  border: solid var(--clr-grey-dark);
+  border-width: 0.1px;
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service .underline {
+.skill .underline {
   width: 3rem;
   height: 0.12rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service:hover {
+.skill:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-9);
 }
-.service:hover .underline {
+.skill:hover .underline {
   background: var(--clr-primary-9);
 }
 @media screen and (min-width: 676px) {
-  .services-center {
+  .skills-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 2rem;
@@ -378,7 +381,7 @@ Services
   }
 }
 @media screen and (min-width: 992px) {
-  .services-center {
+  .skills-center {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -505,11 +508,9 @@ Projects
   }
 }
 
-/*
-===============
-Footer
-===============
-*/
+/*-------------------------------*/
+/*-----------Footer--------------*/
+/*-------------------------------*/
 .footer {
   height: 7rem;
   background: var(--clr-grey-dark);
@@ -531,11 +532,9 @@ Footer
   margin: 0 auto 1rem auto;
 }
 
-/*
-===============
-Contact Page
-===============
-*/
+/*-------------------------------*/
+/*-----------Contact-------------*/
+/*-------------------------------*/
 .contact-page {
   display: grid;
   place-items: center;
@@ -555,7 +554,7 @@ Contact Page
 }
 .contact-form h3 {
   padding-top: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-dark);
 }
 .form-group {
   padding: 1rem 1.5rem;

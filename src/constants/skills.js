@@ -10,7 +10,7 @@ export default [
   },
   {
     id: 3,
-    title: "HTML",
+    title: "AWS",
   },
   {
     id: 4,
@@ -30,6 +30,6 @@ export default [
     title: "EXPRESS",
   },  {
     id: 9,
-    title: "AWS",
+    title: "HTML",
   },
 ]
