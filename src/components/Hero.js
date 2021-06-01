@@ -22,7 +22,7 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>Aminat Bostanova</h1>
+            <h1>Aminat Puebla</h1>
             <h4>Software Developer</h4>
             <SocialLinks/>
           </div>

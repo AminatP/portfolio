@@ -21,6 +21,8 @@ Variables
   --clr-primary-5: #2caeba;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
+
+  /*using 7 for social links nad page links hover*/
   --clr-primary-7: hsl(184, 65%, 59%);
   --clr-primary-8: hsl(184, 80%, 74%);
   --clr-primary-9: hsl(185, 94%, 87%);
@@ -37,6 +39,10 @@ Variables
   --clr-green-dark: hsl(125, 67%, 35%);
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
+
+  /* using this color for hero + navbar + footer component*/
+  --clr-grey-dark: hsl(221, 20%, 16%);
+
   /* this is here changes color of the right side of my image*/
   --clr-white: #fff;
   --ff-primary: "Roboto", sans-serif;
@@ -120,7 +126,7 @@ p {
   h2,
   h3,
   h4 {
-    line-height: 1;
+    line-height: 1.5;
   }
 }
 /*  global classes */
@@ -194,11 +200,11 @@ p {
 }
 .social-link {
   font-size: 2.75rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-white);
   transition: var(--transition);
 }
 .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-7);
 }
 
 /*-------------------------------*/
@@ -260,21 +266,17 @@ p {
   }
 }
 
-/*
-===============
-Hero
-===============
-*/
+/*-------------------------------*/
+/*-------------Hero--------------*/
+/*-------------------------------*/
 
 .hero {
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  /* background: rgb(229, 243, 240); */
-  background: #202530;
+  background: var(--clr-grey-dark);
   position: relative;
 }
-
 .hero-center {
   height: 100%;
   display: grid;
@@ -292,7 +294,10 @@ Hero
   height: 400px;
 }
 .hero-info h4 {
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-9);
+}
+.hero-info h1 {
+  color: var(--clr-white);
 }
 
 @media screen and (min-width: 992px) {
@@ -507,7 +512,7 @@ Footer
 */
 .footer {
   height: 7rem;
-  background: #222;
+  background: var(--clr-grey-dark);
   text-align: center;
   display: grid;
   place-items: center;
@@ -525,94 +530,7 @@ Footer
 .footer-links {
   margin: 0 auto 1rem auto;
 }
-.footer .social-link {
-  color: var(--clr-white);
-}
-.footer .social-link:hover {
-  color: var(--clr-primary-5);
-}
-/*
-===============
-Pages
-===============
-*/
-.blog-template,
-.projects-page,
-.blog-page,
-.error-page,
-.about-page,
-.contact-page {
-  background: var(--clr-grey-10);
-  min-height: calc(100vh - 5rem - 9rem);
-}
-.error-page {
-  display: grid;
-  place-items: center;
-  background: var(--clr-primary-10);
-  text-align: center;
-}
-.error-page h1 {
-  text-transform: uppercase;
-  color: var(--clr-primary-1);
-  margin-bottom: 2rem;
-}
 
-/*
-===============
-About Page
-===============
-*/
-.about-page {
-  padding: 7rem 0;
-}
-.about-img {
-  margin-bottom: 2rem;
-  height: 25rem;
-}
-.about-text .section-title {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-.about-text .underline {
-  margin-left: 0;
-  margin-right: 0;
-}
-.about-text p {
-  line-height: 2;
-}
-.stack-container {
-  width: 30rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 0.5rem;
-}
-.stack-container span {
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  letter-spacing: 1px;
-  color: var(--clr-grey-4);
-}
-.stack-icon {
-  color: var(--clr-primary-5);
-  margin-right: 0.25rem;
-  font-size: 1rem;
-}
-@media screen and (min-width: 992px) {
-  .about-center {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    column-gap: 4rem;
-  }
-  .about-img {
-    grid-column: 1 / span 5;
-    margin-bottom: 0;
-  }
-  .about-text {
-    grid-column: 6 / -1;
-  }
-}
 /*
 ===============
 Contact Page
