@@ -1,6 +1,5 @@
 import React from "react"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 
@@ -15,7 +14,7 @@ const query = graphql`
   }
 }
 `
-const HomePage = () => {
+const Hero = () => {
   const {file:{childImageSharp:{fluid}}} = useStaticQuery(query);
   return (
     <header className="hero">
@@ -23,11 +22,8 @@ const HomePage = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>I am a rockstar</h1>
-            <h4>full stack developer</h4>
-            <Link to='/contact' className="btn">
-            contact me
-            </Link>
+            <h1>Aminat Bostanova</h1>
+            <h4>Software Developer</h4>
             <SocialLinks/>
           </div>
         </article>
@@ -37,4 +33,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default Hero
