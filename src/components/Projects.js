@@ -3,31 +3,38 @@ import Title from "./Title"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
 import projects from "../constants/projects"
 
-const query = graphql`
-  {
-    file(relativePath: {eq: "projects-1.jpg"}) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+const pageQuery = graphql `
+  query {
+    projectImg: allFile(filter: {extension: {regex: "/(jpg)/"}}, sort: {fields: base, order: ASC}) {
+      edges {
+        node {
+          id
+          base
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
   }
 `
-
 const Projects = () => {
-  const {file:{childImageSharp:{fluid}}} = useStaticQuery(query);
+  const {projectImg:{edges}} = useStaticQuery(pageQuery)
+  const info = edges.map(image => {
+    return image.node.childImageSharp.fluid
+  })
   return <section className="section projects" id="projects">
     <Title title="Projects"/>
     <div className="section-center projects-center">
       {projects.map((project)=>{
-        const {id, title, description, stack, github, url} = project
+        const {id, title, description, stack, github, url, idx} = project
 
         return <article key={id} className="project">
-          <Image fluid={fluid} className="project-img"/>
+          <Image fluid={info[idx]} className="project-img"/>
           <div className="project-info">
             <h3>{title}</h3>
             <p className="project-desc">{description}</p>

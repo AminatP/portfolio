@@ -1,4 +1,5 @@
 import React from "react"
+
 export default [
   {
     id: 1,
@@ -10,7 +11,7 @@ export default [
       {id: 3, "title": "javascript"}],
     github: "https://github.com/AminatP/chai-noon",
     url: "https://chai-noon.herokuapp.com",
-
+    idx: 0,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export default [
       {id: 3, "title": "javascript"}],
     github: "https://github.com/AminatP/radius",
     url: "https://chai-noon.herokuapp.com",
+    idx: 1,
   },
   {
     id: 3,
@@ -33,5 +35,6 @@ export default [
       {id: 3, "title": "javascript"}],
     github: "https://github.com/AminatP/Biblioteca",
     url: "https://chai-noon.herokuapp.com",
+    idx: 2,
   },
 ]
