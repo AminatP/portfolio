@@ -4,7 +4,7 @@ export default [
   {
     id: 1,
     title: "CHAIN NOON",
-    description: "Chain Noon is mock, fully functional e-commerce website that sells tea products. It was developed by myself and 3 other developers within 7 day period. Users can add products to the card that persists, update or delete from the card. It also has enhanced security features and it is deployed to Heroku via Travis CI for continuous integration. I tackled vertical slices of the site including pagination.",
+    description: "Chain Noon is a mock, fully functional e-commerce website that sells tea products. It was developed by myself and 3 other developers within 7 day period. Users can add products to the cart that persists, update or delete from the cart. It also has enhanced security features and it is deployed to Heroku via Travis CI for continuous integration. I tackled vertical slices of the site including pagination.",
     stack: [
       {id: 1, "title": "JS"},
       {id: 2, "title": "React"},
