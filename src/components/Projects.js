@@ -36,7 +36,7 @@ const Projects = () => {
         const {id, title, description, stack, github, url, idx} = project
 
         return <article key={id} className="project">
-          <Image fluid={info[idx]} className="project-img"/>
+          <Image fluid={info[idx]} loading="eager" className="project-img"/>
           <div className="project-info">
             <h3>{title}</h3>
             <p className="project-desc">{description}</p>
