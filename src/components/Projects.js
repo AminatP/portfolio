@@ -1,5 +1,4 @@
 import React from "react"
-import Title from "./Title"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
@@ -28,7 +27,10 @@ const Projects = () => {
     return image.node.childImageSharp.fluid
   })
   return <section className="section projects" id="projects">
-    <Title title="Projects"/>
+    <div className="section-title">
+      <h2>Projects</h2>
+      <div className="underline"></div>
+    </div>
     <div className="section-center projects-center">
       {projects.map((project)=>{
         const {id, title, description, stack, github, url, idx} = project

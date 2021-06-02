@@ -4,7 +4,7 @@ export default [
   {
     id: 1,
     title: "CHAIN - NOON",
-    description: "Chain Noon is mock, fully functional e-commerce website that sells tea products. It was developed by myself and 3 other developers within 7 day period. Users can add products to the card that persists, update or delete from the card. It also has enhanced security features and it is deployed to Heroku via Travis CI for continuous integration",
+    description: "Chain Noon is mock, fully functional e-commerce website that sells tea products. It was developed by myself and 3 other developers within 7 day period. Users can add products to the card that persists, update or delete from the card. It also has enhanced security features and it is deployed to Heroku via Travis CI for continuous integration. I tackled vertical slices of the site including pagination.",
     stack: [
       {id: 1, "title": "JS"},
       {id: 2, "title": "React"},
@@ -19,7 +19,7 @@ export default [
   {
     id: 2,
     title: "RADIUS",
-    description: "Website that helps users to get acquainted with the neighborhood before moving in",
+    description: "Radius is a web application that aims to help users that are looking to move to the new city not only find an apartment but also get acquainted with the neighborhood before moving in. Application was built within 2.5 weeks by a team of four developers. I was solely responsible for Firebase Authentication and setting up Firestore for user data collection.",
     stack: [
       {id: 1, "title": "JS"},
       {id: 2, "title": "React"},
@@ -27,13 +27,13 @@ export default [
       {id: 4, "title": "Firebase"},
       {id: 5, "title": "Google Maps API"}],
     github: "https://github.com/AminatP/radius",
-    url: "https://chai-noon.herokuapp.com",
+    url: "https://radius-ny.web.app",
     idx: 1,
   },
   {
     id: 3,
     title: "BIBLIOTECA",
-    description: "Ethereum based decentralized auction platform for rare books.",
+    description: "Biblioteca is a mock, auction platform for rare and antiquarian books. Payment is processed through ethereum based decentralized platform for convinience and extra security. To create this aplication I taught myself basics of the Solidity language so that I could write smart contracts for the application.",
     stack: [
       {id: 1, "title": "JS"},
       {id: 2, "title": "React"},
@@ -42,7 +42,7 @@ export default [
       {id: 5, "title": "Web3"},
       {id: 6, "title": "MetaMask"}],
     github: "https://github.com/AminatP/Biblioteca",
-    url: "https://chai-noon.herokuapp.com",
+    url: "https://github.com/AminatP/Biblioteca",
     idx: 2,
   },
 ]
