@@ -16,5 +16,4 @@ const Contact = () => {
     </article>
   </section>
 }
-
 export default Contact
